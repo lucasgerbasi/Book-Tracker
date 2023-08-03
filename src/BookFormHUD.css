@@ -1,0 +1,90 @@
+/* BookFormHUD.css */
+
+.book-form-hud.active {
+    right: 0;
+    /* Slide the form in from the right when active */
+}
+
+.book-form-hud {
+    position: fixed;
+    right: -600px;
+    /* Initially hide the form to the right of the screen */
+    width: 600px;
+    height: 81%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: var(--color-creamy-beige);
+    transition: right 0.8s ease-out;
+    /* Add a smooth transition for the sliding effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-container {
+    background-color: rgba(0, 0, 0, 0.671);
+    /* Black background */
+    border-radius: 10px;
+    /* Slight border radius */
+    padding: 50px;
+    /* Add some padding for content inside the card */
+}
+
+.close-button {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: var(--color-creamy-beige);
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.book-form-hud input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    display: flex;
+    border-radius: 4px;
+    color: var(--color-creamy-beige);
+    background-color: transparent;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.book-form-hud .checkbox-read {
+    display: flex;
+    justify-content: center;
+}
+
+.book-form-hud .checkbox-read input[type="checkbox"] {
+    display: inline-block;
+}
+
+.book-form-hud .input-checkbox {
+    display: grid;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+
+.book-form-hud button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: var(--color-creamy-beige);
+    background-color: var(--color-dusty-gold);
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    margin: 5px;
+  }
+
+  .book-form-hud button:hover {
+    background-color: #aa6644;
+  }

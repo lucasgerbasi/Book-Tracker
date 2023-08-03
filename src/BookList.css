@@ -1,0 +1,17 @@
+:root {
+  border: 1px solid red;
+}
+
+.book-list {
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    z-index: 0;
+  }
+  
+  .book-item {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
